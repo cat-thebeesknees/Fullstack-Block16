@@ -41,7 +41,7 @@ const justSub = subscriptionOnly(sarah.pricePerRefill, sarah.refills);
 
 
 
-console.log("Your grand total is $", justSub);
+console.log("Your grand total is $" + justSub);
 
 //function for coupon
 
@@ -53,18 +53,18 @@ function withCoupon(costPer, numRefills) {
 
 const justCoupon = withCoupon(timmy.pricePerRefill, timmy.refills);
 
-console.log("Your grand total is $",justCoupon);
+console.log("Your grand total is $" + justCoupon);
 
 //function for both subscription and coupon.
 
 function hasBoth(costPer, numRefills) {
     if (rocky.coupon == true && rocky.subscription == true) {
-        return (costPer * numRefills - costPer * numRefills * 0.25) - 10;
+        return (costPer * numRefills - costPer * numRefills * 0.25) -10;
 
     }
     
 }
 const doubleDeal = hasBoth(rocky.pricePerRefill, rocky.refills);
-console.log("Your grand total is $",doubleDeal);
+console.log("Your grand total is $" + doubleDeal);
 // }else {
 //     return costPer * numRefills;
